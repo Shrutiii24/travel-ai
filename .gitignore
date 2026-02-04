@@ -1,0 +1,21 @@
+# ENV FILES (SECRETS)
+.env
+.env.*
+.env.local
+!.env.example
+
+# PYTHON
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# NODE / FRONTEND
+node_modules/
+.next/
+dist/
+build/
+
+# OS FILES
+.DS_Store
+Thumbs.db

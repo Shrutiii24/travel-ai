@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  padding: 2rem 0;
+  background: transparent;
+  text-align: center;
+  color: #a3a3a3;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-top: 1px solid #e3e3e3;
+  margin-top: 2rem;
+}
+.footer a {
+  color: #2c53e7;
+  text-decoration: none;
+}

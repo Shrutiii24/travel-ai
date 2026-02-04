@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+dateparser
+amadeus
+langchain
+langgraph
+langchain-core
+langchain-groq
+pydantic
+requests
+httpx

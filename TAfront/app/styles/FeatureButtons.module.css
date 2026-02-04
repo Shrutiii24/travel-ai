@@ -1,0 +1,25 @@
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.featureBtn {
+  background:#fff;
+  box-shadow:0 8px 16px rgba(44,44,44,0.13);
+  color:#474747;
+  border:none;
+  font-size:1.1rem;
+  padding:1.2rem 2rem;
+  border-radius:1.5rem;
+  cursor:pointer;
+  font-weight: 600;
+  transition: box-shadow 0.2s;
+}
+.featureBtn:hover {
+  box-shadow:0 16px 32px rgba(44,44,44,0.20);
+}
+.featureBtn:active {
+  box-shadow:0 4px 8px rgba(44,44,44,0.10);
+}
