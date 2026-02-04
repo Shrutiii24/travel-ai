@@ -1,4 +1,4 @@
-import { i } from "framer-motion/client";
+import { motion } from "framer-motion/client";
 import React, { useMemo, useState } from "react";
 import { FlightOption } from "../results/types/travel";
 
