@@ -1,4 +1,5 @@
 "use client";
+import {Suspense} from "react";
 import { useEffect, useState } from "react";
 import { useMemo } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
@@ -14,7 +15,7 @@ type WeatherSummary = {
   packing_note: string;
 };
 
-export default function ResultsPage() {
+function ResultsPageInner() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -43,8 +44,6 @@ export default function ResultsPage() {
   const [maxStops, setMaxStops] = useState<number | null>(null);
   const [maxHotelPrice, setMaxHotelPrice] = useState<number | null>(null);
   const [minRating, setMinRating] = useState<number | null>(null);
-
-  // NEW: per-browser session id (stored in localStorage)
   const [sessionId, setSessionId] = useState<string | null>(null);
 
   useEffect(() => {
@@ -674,5 +673,12 @@ export default function ResultsPage() {
         </section>
       </div>
     </main>
+  );
+}
+export default function ResultsPage() {
+  return (
+    <Suspense>
+      <ResultsPageInner />
+    </Suspense>
   );
 }
